@@ -131,3 +131,16 @@ docker-compose -f stackdb.yml pull
 ```
 docker-compose -f stackdb.yml up -d  
 ```
+
+→ **Construir Imagen**
+docker build . -t test/sample:1.0
+
+→ **Logearse en Docker Hub**
+```
+docker login
+```
+
+→ **Subir Imagen a docker Hub**
+```
+docker pus test/sample
+```
